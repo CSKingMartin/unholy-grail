@@ -1,0 +1,67 @@
+.mountainMenu {
+	position: absolute;
+
+	
+	background: blue;
+	width: 1280px;
+	height: 1280px;
+	
+	border-radius:100% 100% 0 0;
+	overflow: hidden;
+
+	&.top {
+		top: 0;
+		transform: rotate(180deg);
+	}
+
+	&.bottom {
+		left: 50%;
+		margin-left: -640px;
+		margin-bottom: -1180px;
+		bottom: 0;
+	}
+
+}
+.mountain{
+	width: 640px;
+	height: 640px;
+	background: black;
+	display: block;
+	position: absolute;
+	opacity: .5;
+	box-sizing: border-box;
+	border: 2px solid white;
+	transform-origin: 100% 100%;
+	margin-top: -420px;
+	overflow: hidden;
+
+
+	//margin: 0 0 0 -50px;
+	
+
+
+	&.number1 {
+		//background: yellow;
+		transform:rotate(-54deg) skewY(54deg);
+		// transform-origin: 250px;
+	}
+	&.number2 {
+		transform: rotate(-18deg) skewY(54deg);
+	}
+	&.number3 {
+		transform:rotate(18deg) skewY(54deg);
+	}
+	&.number4 {
+		transform:rotate(54deg) skewY(54deg);
+	}
+	&.number5 {
+		transform:rotate(90deg) skewY(54deg);
+	}
+
+
+
+
+	&:hover {
+		background: green;
+	}
+}

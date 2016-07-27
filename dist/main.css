@@ -1,0 +1,183 @@
+.mountainMenu {
+  position: absolute;
+  background: blue;
+  width: 1280px;
+  height: 1280px;
+  border-radius: 100% 100% 0 0;
+  overflow: hidden; }
+  .mountainMenu.top {
+    top: 0;
+    transform: rotate(180deg); }
+  .mountainMenu.bottom {
+    left: 50%;
+    margin-left: -640px;
+    margin-bottom: -1180px;
+    bottom: 0; }
+
+.mountain {
+  width: 640px;
+  height: 640px;
+  background: black;
+  display: block;
+  position: absolute;
+  opacity: .5;
+  box-sizing: border-box;
+  border: 2px solid white;
+  transform-origin: 100% 100%;
+  margin-top: -420px;
+  overflow: hidden; }
+  .mountain.number1 {
+    transform: rotate(-54deg) skewY(54deg); }
+  .mountain.number2 {
+    transform: rotate(-18deg) skewY(54deg); }
+  .mountain.number3 {
+    transform: rotate(18deg) skewY(54deg); }
+  .mountain.number4 {
+    transform: rotate(54deg) skewY(54deg); }
+  .mountain.number5 {
+    transform: rotate(90deg) skewY(54deg); }
+  .mountain:hover {
+    background: green; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Ubuntu', serif; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin: 1.1em 0; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+pre {
+  font-family: monospace; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5 {
+  font-size: 1em; }
+
+.card {
+  border: solid black 2px;
+  position: relative;
+  background: grey;
+  height: 100%;
+  min-height: 300px; }
+  .card .card__content {
+    padding: 10px; }
+  .card .card__title {
+    width: 100%;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    bottom: 0;
+    background: white; }
+
+.card--tab-card ul.card__tab-menu {
+  list-style-type: none;
+  width: 100%;
+  text-align: right; }
+  .card--tab-card ul.card__tab-menu li {
+    font-size: 1.1em;
+    background: white;
+    text-align: center;
+    border: 2px solid black;
+    display: inline; }
+
+.button {
+  background: grey;
+  height: 7em;
+  border: 2px solid black; }
+  .button .button__title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px; }
+
+.content-main {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.rhythm > * + * {
+  margin-top: 1em; }
+
+.layout-frame-wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 300px; }
+  @media (min-width: 900px) {
+    .layout-frame-wrapper > * {
+      float: left;
+      margin-top: 0em; }
+      .layout-frame-wrapper > *:nth-child(1) {
+        width: 23%; }
+      .layout-frame-wrapper > *:nth-child(2) {
+        width: 46%; }
+      .layout-frame-wrapper > *:nth-child(3) {
+        width: 23%; }
+    .layout-frame-wrapper > * + * {
+      margin-left: 4%; } }

@@ -1,0 +1,34 @@
+@import "mountainMenu",
+"vendor/reset",
+"card",
+"button";
+
+.content-main{
+	position: relative;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+}
+
+.rhythm > * + * {
+	margin-top: 1em;
+}
+
+.layout-frame-wrapper {
+	overflow: hidden;
+	width: 100%;
+	min-height: 300px;
+	@media (min-width: 900px) {
+		& > * { 
+			float: left;
+			margin-top: 0em;
+			&:nth-child(1) {width: 23%;}
+			&:nth-child(2) {width: 46%;}
+			&:nth-child(3) {width: 23%;}
+		}
+		& > * + * {
+			margin-left: 4%;
+		}
+	}
+}

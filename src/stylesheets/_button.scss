@@ -1,0 +1,13 @@
+.button {
+	background: grey;
+	height: 7em;
+	border: 2px solid black;
+
+	.button__title {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+}
