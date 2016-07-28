@@ -1,3 +1,5 @@
+@import "card--tab-card";
+
 .card {
 	border: solid black 2px;
 	position: relative;
@@ -8,37 +10,20 @@
 	
 	.card__content {
 		padding: 10px;
+		margin-bottom: 3em;
 	}
 	.card__title {
 		width: 100%;
 		position: absolute;
 		font-size: 1.5em;
 		font-weight: bold;
-		padding: 10px;
+		padding: .5em;
 		bottom: 0;
 		background: white;
 	}
 }
 
-.card--tab-card {
-	ul.card__tab-menu {
-		
-		list-style-type: none;
-		//background: white;
-		width: 100%;
-		text-align: right;
 
-		li {
-			font-size: 1.1em;
-			background: white;
-			text-align: center;
-			border: 2px solid black;
-			display: inline;
-			
-		}
-	}
-	
-}
 
 
 

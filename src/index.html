@@ -6,52 +6,144 @@
 	<link rel="stylesheet" href="main.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
 </head>
 
 <body>
 
 	<div class="content-main">
 
+		<div class="header">
+			<div class="header__logo">
+				Let this Unholy Grail be a Source of Truth for Ye
+			</div>
+		</div>
+
 		<div class="rhythm">
 			<h1>Lorem ipsum.</h1>
 			
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-			<div class="layout-frame-wrapper rhythm">
-				<div class="card">
-					<div class="card__title">
-						Example Card
-					</div>
-					<div class="card__content">
-						This is a card. Lorem ipsum, bro.
-					</div>
+			<!-- <div class="content--castle">
+				<div class="shootAnArrow left">
+
 				</div>
 
+				<div class="coverReveal">
+				</div>
+
+				<div class="string">
+
+				</div>
+
+				<div class="shootAnArrow right">
+
+				</div>
+
+				<script>
+				   jQuery(function($) {
+				       $(".shootAnArrow.left").click(function() {
+				       		
+				          	$(".coverReveal").addClass("active").delay(2000);
+
+				          	setTimeout(function() {
+				          		$(".string").addClass("active")
+				          	}, 2000);
+				       });
+
+				       $(".shootAnArrow.right").click(function() {
+				       		$(".coverReveal").removeClass("active");
+				       		$(".string").removeClass("active");
+				       })
+				   });
+				</script>
+
+			</div> -->
+
+
+			<div class="layout-frame-wrapper rhythm">
 				<div class="card">
+					
+					<div class="card__content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
 					<div class="card__title">
 						Example Card
-					</div>
-					<div class="card__content">
-						This is a card. Lorem ipsum, bro.
 					</div>
 				</div>
 
 				<div class="card card--tab-card">
 					<ul class="card__tab-menu">
-			
-						<li>Click Me</li>
-						<li>Click Me</li>
-				
+						<li class="card__tab current" id="1">Click Me</li>
+						<li class="card__tab" id="2">Click Me</li>
+						<li class="card__tab" id="3">Click Me</li>
+						<li class="card__tab" id="4">Click Me</li>
 					</ul>
-					<div class="card__title">
-						Example Tabbed Card
+
+					<div class="card__content current 1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.   
 					</div>
-					<div class="card__content">
-						This is some Content
+					<div class="card__content 2">
+						Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+					</div>
+					<div class="card__content 3">
+						Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</div>
+					<div class="card__content 4">
+						Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					
+					<div class="card__title">
+						Example Tab Card
 					</div>
 
+					<script>
+					   jQuery(function($) {
+					       $(".card__tab").click(function() {
+					       		var id = ".card__content." + $(this).attr("id");
+					       		console.log("ACTIVATING LASER " + id);
+					       		$(".card__tab.current").removeClass("current");
+					       		$(".card__content.current").removeClass("current");
+					          	$(this).addClass("current");
+					          	$(id).addClass("current");
+
+					       });
+					   });
+					</script>
+
 				</div>
+
+				<div class="card">
+					
+					<div class="card__content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="card__title">
+						Example Card
+					</div>
+				</div>
+
+				
+
 			</div>
+
+
 				
 			<div class="text" style="text-align: right;">
 				<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>

@@ -1,7 +1,9 @@
-@import "mountainMenu",
+@import
 "vendor/reset",
-"card",
-"button";
+"components/card/card",
+"components/button",
+"components/header",
+"components/castle";
 
 .content-main{
 	position: relative;
@@ -19,6 +21,7 @@
 	overflow: hidden;
 	width: 100%;
 	min-height: 300px;
+
 	@media (min-width: 900px) {
 		& > * { 
 			float: left;

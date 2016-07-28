@@ -1,0 +1,31 @@
+.card--tab-card {
+	.card__content {
+		display: none;
+
+		&.current {
+			display: inherit;
+		}
+	}
+	ul.card__tab-menu {
+		width: 100%;
+		list-style-type: none;
+		background: white;
+		height: 2em;
+		text-align: right;
+		overflow: hidden;
+
+		li.card__tab {
+			cursor: pointer;
+			padding: 5px;
+			background: white;
+			border-left: 2px solid black;
+			float: right;
+			height: 100%;
+
+			&.current{
+				border-bottom: none;
+				background: grey;
+			}
+		}	
+	}
+}
