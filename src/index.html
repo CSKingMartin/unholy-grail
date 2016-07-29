@@ -163,14 +163,11 @@
 						jQuery(function($) {
 							$(".tabs").each(function() {
 								$(".tabs__tab").each(function() {
-									console.log("slime");
 									new Tab(this);
 								})
-								//new Tab(this);
 							});
 
 						});
-
 
 						function Tab(element) {
 							var self = this;
@@ -184,8 +181,11 @@
 
 								console.log('catherine zeta zones she dips beneath lazers');
 
-								$(element).addClass("current");
+								var parent = element.parentElement.getElementsByClassName(".tabs__tab current");
 
+								console.log(parent);
+
+								$(element).addClass("current");
 							}
 						}
 
