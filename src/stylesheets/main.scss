@@ -3,7 +3,8 @@
 "components/card/card",
 "components/button",
 "components/header",
-"components/castle";
+"components/castle",
+"components/tabs";
 
 .content-main{
 	position: relative;
@@ -14,7 +15,7 @@
 }
 
 .rhythm > * + * {
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
 .layout-frame-wrapper {

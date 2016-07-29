@@ -1,0 +1,19 @@
+.card--book-card {
+
+	.arrow-button {
+		position: relative;
+		width: 3em;
+		height: 5em;
+		background: white;
+		margin-top: 4.5em;
+
+		&.right{
+			float: right;
+		}
+		&.left{
+			float: left;
+
+		}
+	}
+	
+}

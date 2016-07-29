@@ -61,54 +61,138 @@
 
 			</div> -->
 
+			<!-- <div class="card card--book-card">
 
-			<div class="layout-frame-wrapper rhythm">
-				<div class="card">
-					
-					<div class="card__content">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<div class="card__title">
-						Example Card
-					</div>
+				<div class="card__title">
+						Example Book Card
+
+						
 				</div>
 
-				<div class="card card--tab-card">
-					<ul class="card__tab-menu">
-						<li class="card__tab current" id="1">Click Me</li>
-						<li class="card__tab" id="2">Click Me</li>
-						<li class="card__tab" id="3">Click Me</li>
-						<li class="card__tab" id="4">Click Me</li>
-					</ul>
+				<div class="arrow-button right">
+						
+				</div>
 
-					<div class="card__content current 1">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.   
+				<div class="arrow-button left">
+						
+				</div>
+
+				<div class="card__content stacked current 1">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<div class="card__content stacked 2">
+					Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</div>
+				<div class="card__content stacked 3">
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.
+				</div>
+				<div class="card__content stacked 4">
+					Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+
+			</div> -->
+			<div class="layout-frame-wrapper rhythm">
+				<div class="card">
+					<img src="http://lorempixel.com/g/300/300/cats">
+					<div class="card__title">Classic Cats</div>
+				</div>
+				<div class="card">
+					<div class="card__content">
+
+						<div class="tabs">
+							<ul class="tabs__menu">
+								<li class="tabs__tab current">Click Me</li>
+								<li class="tabs__tab">Click Me</li>
+								<li class="tabs__tab">Click Me</li>
+							</ul>
+
+							<div class="tabs__content current">
+								<h1>Don't</h1>
+							</div>
+							<div class="tabs__content">
+								<h1>Get</h1>
+							</div>
+							<div class="tabs__content">
+								<h1>Close</h1>
+							</div>
+						</div>
+
 					</div>
-					<div class="card__content 2">
-						Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</div>
-					<div class="card__content 3">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.
-					</div>
-					<div class="card__content 4">
-						Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					
+
 					<div class="card__title">
 						Example Tab Card
 					</div>
 
-					<script>
+					<script> 
+
+						jQuery(function($) {
+							$(".tabs").each(function() {
+								$(".tabs__tab").each(function() {
+									console.log("slime");
+									new Tab(this);
+								})
+								//new Tab(this);
+							});
+
+						});
+
+
+						function Tab(element) {
+							var self = this;
+							element.onclick = function() {
+								self.toggle(element);
+							}
+						}
+
+						Tab.prototype = {
+							toggle: function(element) {
+
+								console.log('catherine zeta zones she dips beneath lazers');
+
+								$(element).addClass("current");
+
+							}
+						}
+
+					</script>
+						
+					<!-- <script>
+						
 					   jQuery(function($) {
 					       $(".card__tab").click(function() {
 					       		var id = ".card__content." + $(this).attr("id");
@@ -120,19 +204,91 @@
 
 					       });
 					   });
-					</script>
 
+					 //   $('.card').each(function() {
+						// 	new Card(this);
+
+						// })
+
+
+					 //   function Card(el) {
+					 //   		var self = this;
+					 //   		this.$el = $(this);
+					 //   		this.$tabs = this.$el.find('.card__tab');
+
+					 //   		if (this.$tabs.length > 0) {
+					 //   			new Tabs()
+					 //   		}
+
+					 //  		this.on('click', function() {
+					 //  			self.toggle();
+					 //  		})
+					 //   }
+
+					 //   Card.prototype = {
+					 //   		toggle: function() {
+					 //   			this.$el
+					 //   		}
+					 //   }
+
+					</script> -->
 				</div>
 
 				<div class="card">
 					
 					<div class="card__content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+					</div>
+					<div class="card__title">
+						Example Card
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="layout-frame-wrapper rhythm">
+				<div class="card">
+					
+					<div class="card__content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="card__title">
+						Example Card
+					</div>
+				</div>
+
+			
+
+				<div class="card">
+					
+					<div class="card__content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
 					</div>
 					<div class="card__title">
 						Example Card
@@ -149,12 +305,6 @@
 				<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
 		
 			</div>
-
-				
-
-				<!-- <img src="http://placehold.it" width="200" height="200" style="float: left"/> -->
-				
-
 
 			<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
 			
