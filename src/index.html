@@ -23,7 +23,13 @@
 		<div class="rhythm">
 			<h1>Lorem ipsum.</h1>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 			<!-- <div class="content--castle">
 				<div class="shootAnArrow left">
@@ -150,6 +156,79 @@
 							<div class="tabs__content">
 								<h1>Close</h1>
 							</div>
+
+							<script> 
+
+								jQuery(function($) {
+									$(".tabs").each(function() {
+										$(".tabs__tab").each(function() {
+											new Tab(this);
+										})
+									});
+
+								});
+
+								function Tab(element) {
+
+									console.log('catherine zeta jones');
+									this.cacheElements(element);
+									this.updateEvents();
+
+									this.state = {
+										activeTab: 0
+									};
+								}
+
+								Tab.prototype = {
+
+									cacheElements: function(el) {
+										console.log('she dips beneath');
+										this.el = el;
+										this.tabs = this.el.querySelectorAll('.tab');
+									},
+
+									updateEvents: function() {
+										console.log('LASERS');
+										var self = this;
+
+										this.tabs.map(function(tab, index) {
+											tab.addEventListener('click', function(ev){
+												console.log('fuck me');
+												self.setState({
+													activeTab: index
+												});
+											});	
+										});
+									},
+
+									setState: function(state) {
+										console.log('slime');
+										//copy the last state for removal reference
+										this.lastState = $.extent({}, this.state);
+
+										//update state
+										$.extend(this.state, state);
+
+										//only make updates when activeTab is defined
+										if (state.activeTab !== undefined) {
+											this.tabs[this.state.activeTab].classList.add('current');
+											this.tabs[this.lastState.activeTab].classList.remove('current');
+										}
+									}
+
+									// toggle: function(element) {
+
+									// 	console.log('catherine zeta zones she dips beneath lazers');
+
+									// 	var parent = element.parentElement.getElementsByClassName(".tabs__tab current");
+
+									// 	console.log(parent);
+
+									// 	$(element).addClass("current");
+									// }
+								}
+
+							</script>
 						</div>
 
 					</div>
@@ -158,38 +237,7 @@
 						Example Tab Card
 					</div>
 
-					<script> 
-
-						jQuery(function($) {
-							$(".tabs").each(function() {
-								$(".tabs__tab").each(function() {
-									new Tab(this);
-								})
-							});
-
-						});
-
-						function Tab(element) {
-							var self = this;
-							element.onclick = function() {
-								self.toggle(element);
-							}
-						}
-
-						Tab.prototype = {
-							toggle: function(element) {
-
-								console.log('catherine zeta zones she dips beneath lazers');
-
-								var parent = element.parentElement.getElementsByClassName(".tabs__tab current");
-
-								console.log(parent);
-
-								$(element).addClass("current");
-							}
-						}
-
-					</script>
+					
 						
 					<!-- <script>
 						
