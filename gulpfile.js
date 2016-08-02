@@ -1,6 +1,33 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var watchify = require('watchify');
+var gutil = require('gulp-util');
+var assign = require('lodash.assign');
+
+var customOpts = {
+	entries: ['./src/index.js'],
+	debug: true
+};
+
+var opts = assign({}, watchify.args, customOpts);
+var b = watchify(browserify(opts));
+
+gulp.task('js', bundle);
+b.on('update', function() {
+	bundle()
+	.pipe(browserSync.stream());
+});
+b.on('log', gutil.log);
+
+function bundle() {
+	return b.bundle()
+		.on('error', gutil.log.bind(gutil, 'Browserify Error'))
+		.pipe(source('bundle.js'))
+		.pipe(gulp.dest('./dist/'));
+}
 
 
 gulp.task('default', function() {
@@ -19,13 +46,14 @@ gulp.task('devBuild', function() {
 	.pipe(gulp.dest('./dist/'))
 	.pipe(browserSync.stream());
 
-	gulp.src('./src/stylesheets/main.scss')
+	gulp.src('./src/main.scss')
 	.pipe(sass())
 	.pipe(gulp.dest('./dist/'))
 	.pipe(browserSync.stream());
 
 	
 });
+
 
 gulp.task('bs',['watch'], function(){
 	browserSync({

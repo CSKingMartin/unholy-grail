@@ -1,17 +1,15 @@
 @import
-"vendor/reset",
+"reset",
 "components/card/card",
-"components/button",
+"components/button/button",
 "components/header",
-"components/castle",
-"components/tabs";
+"components/tabs/tabs";
 
 .content-main{
 	position: relative;
 	max-width: 1024px;
 	margin: 0 auto;
 	padding: 0 20px;
-
 }
 
 .rhythm > * + * {
@@ -30,6 +28,24 @@
 			&:nth-child(1) {width: 23%;}
 			&:nth-child(2) {width: 46%;}
 			&:nth-child(3) {width: 23%;}
+		}
+		& > * + * {
+			margin-left: 4%;
+		}
+	}
+}
+
+.layout-sidebyside {
+	overflow: hidden;
+	width: 100%;
+	min-height: 300px;
+
+	@media (min-width: 900px) {
+		& > * { 
+			float: left;
+			margin-top: 0em;
+			&:nth-child(1) {width: 48%;}
+			&:nth-child(2) {width: 48%;}
 		}
 		& > * + * {
 			margin-left: 4%;
