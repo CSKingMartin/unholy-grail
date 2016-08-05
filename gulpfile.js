@@ -30,6 +30,35 @@ function bundle() {
 }
 
 
+// var customOpts = {
+// 	entries: ['./src/index.js'],
+// 	debug: true
+// };
+
+// gulp.task('js', function() {
+// 	var opts = assign({}, watchify.args, customOpts);
+// 	var b = browserify(opts);
+	
+// 	b.on('update', function() {
+// 		bundle()
+// 		.pipe(browserSync.stream());
+// 	});
+	
+// 	b.on('log', gutil.log);
+
+// 	// b.transform(watchify, { opts })
+// 	function bundle() {
+// 		return b.bundle()
+// 			.on('error', gutil.log.bind(gutil, 'Browserify Error'))
+// 			.pipe(source('bundle.js'))
+// 			.pipe(gulp.dest('./dist/'));
+// 	}
+
+// 	return bundle();
+// });
+
+
+
 gulp.task('default', function() {
 	console.log('welcome to gulp, idiot');
 });
@@ -61,4 +90,9 @@ gulp.task('bs',['watch'], function(){
 			baseDir: 'dist'
 		}
 	})
+});
+
+gulp.task('gi', function() {
+	gulp.src('./src/images/*.**')
+	.pipe(gulp.dest('dist/images/'));
 });

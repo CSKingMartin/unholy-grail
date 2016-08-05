@@ -1,0 +1,32 @@
+.reveal-block {
+	&:hover {
+		.reveal-block__content-hide{
+			transition: opacity ease-in .25s;
+			opacity: 1;
+		}
+		.reveal-block__content-dim {
+			transition: opacity ease-in .5s;
+			opacity: .2;
+		}
+	}
+	.reveal-block__content-hide {
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		font-size: 3em;
+		font-weight: bold;
+		transition: opacity ease-in .5s;
+		opacity: 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 30px;
+	}
+
+	.reveal-block__content-dim {
+		transition: opacity ease-in .5s;
+	}
+}

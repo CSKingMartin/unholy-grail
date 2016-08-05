@@ -1,5 +1,5 @@
 {
-  "name": "discsite",
+  "name": "unholyGrail",
   "version": "1.0.0",
   "description": "my attempt at something cool lol you're a failure",
   "main": "index.js",
@@ -8,10 +8,10 @@
   },
   "author": "cskingmartin <cwells@linfield.edu>",
   "license": "ISC",
-  
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "browserify": "^13.1.0",
+    "glob": "^7.0.5",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "hbsfy": "^2.7.0",

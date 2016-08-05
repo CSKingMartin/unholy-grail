@@ -7,6 +7,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="./masonry.pkgd.js"></script>
 	<script src="./bundle.js"></script>
 
 </head>
@@ -17,173 +19,365 @@
 
 		<div class="header">
 			<div class="header__logo">
-				Let this Unholy Grail be a Source of Truth for Ye
+				Curt Wells -- Printmaker
 			</div>
 		</div>
 
 		<div class="rhythm">
-			<h1>Who are ye who doth approach?</h1>
+			<h1>Gallery Tessalation Test</h1>
 			
-			<p>You seek that which you do not have, but you dare not voice it aloud. Rare is the visit of a pure-hearted one, who seeks to destroy this cup.</p>
+			<p>Curt Wells is a Printmaker based out of Enumclaw WA.</p>
 
-			<!-- <div class="card card--book-card">
+			<div class="grid">
+				<div class="grid-sizer"></div>
 
-				<div class="card__title">
-						Example Book Card
-				</div>
-
-				<div class="arrow-button right">
-						
-				</div>
-
-				<div class="arrow-button left">
-						
-				</div>
-
-				<div class="card__content stacked current 1">
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-				<div class="card__content stacked 2">
-					Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
-				</div>
-				<div class="card__content stacked 3">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.
-				</div>
-				<div class="card__content stacked 4">
-					Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-
-			</div> -->
-			<div class="layout-frame-wrapper rhythm">
-				<div class="card card--hover">
-					<div class="card__content">
-						<img src="http://lorempixel.com/g/300/300/cats">
-					</div>
-					<div class="card--hover__text">
-						<a href="#">Look, a Link</a>
-					</div>
-					<div class="card__title">The Grail Guardian</div>
-				</div>
-				<div class="card">
-					<div class="card__content">
-
-						<div class="tabs">
-							<div class="tabs__menu"></div>
-							<div class="tabs__item is-active">
-								<div class="tabs__item__header">A Warning:</div>
-								<div class="tabs__item__content">
-									Ye who tries to destroy this chalice will only steep it's contents further in darkness and power. Ye who drinks will be consumed; for that is the nature of all things.
-								</div>
-							</div>
-
-							<div class="tabs__item">
-								<div class="tabs__item__header">Click me</div>
-								<div class="tabs__item__content">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. 
-								</div>
-							</div>
-
-							<div class="tabs__item">
-								<div class="tabs__item__header">Click me</div>
-								<div class="tabs__item__content">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/baloonists.jpg">
 						</div>
 
-					</div>
-
-					<div class="card__title">
-						Example Tab Card
-					</div>
-
-				</div>
-
-				<div class="card">
+						<div class="reveal-block__content-hide">
+							<a href="#">The Balloonists</a>
+						</div>
 					
-					<div class="card__content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
 					</div>
-					<div class="card__title">
-						Example Card
-					</div>
+
 				</div>
+				
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/bantamRooster.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Bantam Rooster</a>
+						</div>	
+					
+					</div>
+
+				</div>
+
+				<div class="grid-item">
+
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/chickenSeries1.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Rooster, 1 of 3</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/frogPrince.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">King Frog</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/selfPortrait.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Self Portrait, 3 Colors</a>
+						</div>
+					
+					</div>
+
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/russians.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Russians</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/casablanca.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Ricks American</a>
+						</div>
+					
+					</div>
+					
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/chickenSeries3.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Rooster, 3 of 3</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/cowboy.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Cowboy</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/rhinoJockey.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Blue Rhino, no. 6</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/blueFrog.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Frog Line</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/chickenSeries2.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Rooster, 2 of 3</a>
+						</div>
+					
+					</div>
+					
+				</div>
+
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/cows.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Cows</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/flamingo.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Flamingo</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/judgeMerritt.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Judge Merritt</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/knight.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Knight</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/lineFrog.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Line Frog</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/polishSisters.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Polish Sisters</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/selfPortrait2.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Self Portrait</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/treeFrog.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Tree Frog</a>
+						</div>
+					
+					</div>
+
+				</div>
+				<div class="grid-item">
+					
+					<div class="reveal-block ">
+							
+						<div class="reveal-block__content-dim">
+							<img src="images/valentines.jpg">
+						</div>
+
+						<div class="reveal-block__content-hide">
+							<a href="#">Be Mine</a>
+						</div>
+					
+					</div>
+
+				</div>
+	
 			</div>
-			
 
-			<div class="layout-sidebyside rhythm">
-				<div class="card">
-					
-					<div class="card__content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="card__title">
-						Example Card
-					</div>
-				</div>
+			<script>
+				var elem = document.querySelector('.grid');
+				var msnry = new Masonry( elem, {
+				  // options
+				  itemSelector: '.grid-item',
+				  columnWidth: '.grid-sizer',
+				  percentPosition: true
+				});
 
-				<div class="card">
-					
-					<div class="card__content">
-						<img src="http://lorempixel.com/g/600/250/cats">
-					</div>
-					<div class="card__title">
-						Example Card
-					</div>
-				</div>
-			</div>
+				
+				imagesLoaded( elem ).on( 'progress', function() {
+					msnry.layout();
+				});
+
+				
+			</script>
 
 			<div class="text" style="text-align: right;">
 				<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
@@ -195,6 +389,7 @@
 		</div>
 
 	</div>
+</div>
 
 </body>
 

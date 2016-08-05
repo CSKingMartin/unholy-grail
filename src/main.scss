@@ -1,15 +1,17 @@
 @import
-"reset",
+"stylesheets/reset",
 "components/card/card",
 "components/button/button",
 "components/header",
-"components/tabs/tabs";
+"components/tabs/tabs",
+"components/reveal-block",
+"components/image-gallery/image-gallery";
 
 .content-main{
 	position: relative;
-	max-width: 1024px;
+	max-width: 64em;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 1.25em;
 }
 
 .rhythm > * + * {
@@ -19,9 +21,9 @@
 .layout-frame-wrapper {
 	overflow: hidden;
 	width: 100%;
-	min-height: 300px;
+	min-height: 18.75em;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1000px) {
 		& > * { 
 			float: left;
 			margin-top: 0em;
@@ -35,20 +37,38 @@
 	}
 }
 
+.grid {
+	width: 100%;
+}
+
+.grid-sizer,
+.grid-item {
+	width: 33.33%;
+
+	@media (max-width: 1000px) {
+		width: 50%;
+	}
+}
+.grid-item { 
+	img {
+		width: 100%;
+	}
+}
+
 .layout-sidebyside {
 	overflow: hidden;
 	width: 100%;
-	min-height: 300px;
+	min-height: 18.75em;
 
-	@media (min-width: 900px) {
+	@media (min-width: 1000px) {
 		& > * { 
 			float: left;
 			margin-top: 0em;
-			&:nth-child(1) {width: 48%;}
-			&:nth-child(2) {width: 48%;}
+			width: 48%;
 		}
 		& > * + * {
 			margin-left: 4%;
 		}
 	}
 }
+
